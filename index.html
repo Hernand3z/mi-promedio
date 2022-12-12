@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- Meta -->
+    <meta name="title" content="Mi Promedio" />
+    <meta name="description" content="Calcula tu promedio de una manera fácil y rápida, podrás saber exactamente que nota necesitas sacar para el final de tu materia." />
+    <meta name="robots" content="index,nofollow">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Mi promedio" />
+    <meta property="og:description" content="Calcula tu promedio de una manera fácil y rápida, podrás saber exactamente que nota necesitas sacar para el final de tu materia." />
+    <meta property="og:image" content="http://res.cloudinary.com/dpu5ywrox/image/upload/v1670448502/wuafnvldgx5kmpljd0m3.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mi Promedio</title>
+</head>
+
+<body>
+    <header class="header">
+        <div>Mi promedio</div>
+    </header>
+    <main class="container">
+        <!-- Inicio -->
+        <div class="inicio">
+            <h1>Calcula tu promedio final</h1>
+            <p>Calcula tu promedio de una manera fácil y rápida, podrás saber
+                exactamente que nota necesitas sacar para el final de tu materia.</p>
+            <div class="inicio__disponibilidad">
+                <img src="img/check_circle.svg" alt="check_circle">
+                <p>Disponible para Universidad Modular Abierta.</p>
+            </div>
+        </div>
+        <!-- Calculadora -->
+        <div class="calculadora">
+            <div class="calculadora__resultado">
+                <p>Tu promedio final es:</p>
+                <div class="calculadora__resultado--promedio">
+                    <p id="promedioFinal">0.0</p>
+                </div>
+                <p>*Promedio final no aproximado</p>
+            </div>
+            <table>
+                <thead>
+                    <th></th>
+                    <th>Lab.</th>
+                    <th>Parcial</th>
+                    <th>Nota</th>
+                </thead>
+                <tr>
+                    <td><label for="">Período l</label></td>
+                    <td><input type="number" id="nota1" placeholder="0"></td>
+                    <td><input type="number" id="nota2" placeholder="0"></td>
+                    <td><input type="number" id="prom1" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="">Período ll</label></td>
+                    <td><input type="number" id="nota3" placeholder="0"></td>
+                    <td><input type="number" id="nota4" placeholder="0"></td>
+                    <td><input type="number" id="prom2" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="">Período lll</label></td>
+                    <td><input type="number" id="nota5" placeholder="0"></td>
+                    <td><input type="number" id="nota6" placeholder="0"></td>
+                    <td><input type="number" id="prom3" disabled></td>
+                </tr>
+            </table>
+            <div class="calculadora__button">
+                <input type="button" value="Calcular" id="calcular">
+                <input type="button" value="Borrar" id="Borrar">
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="https://github.com/Hernand3z"><img src="img/logo_github.png" alt="logo_github"></a>
+        <p>Desarrollado por</p>
+        <p class="footer__copyright ">d.hernan.d © 2022</p>
+    </footer>
+    <!-- Script -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
